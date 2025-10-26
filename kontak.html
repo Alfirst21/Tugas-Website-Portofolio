@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya - Kontak</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Portofolio Mahasiswa</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="portofolio.html">Portfolio</a></li>
+                    <li><a href="kontak.html" class="active">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="contact-form" class="container">
+            <h2>Form Request Project</h2>
+            <p>Tertarik untuk bekerja sama? Silakan isi form di bawah ini untuk memesan jasa pembuatan website.</p>
+            
+            <!-- Form Responsif -->
+            <form action="#" method="POST">
+                
+                <!-- Input Nama -->
+                <fieldset>
+                    <label for="nama">Nama Lengkap</label>
+                    <input autofocus type="text" id="nama" name="nama" required placeholder="Masukkan nama lengkap anda">
+                
+                </fieldset>
+                <!-- Input Email -->
+                <fieldset>
+                    <label for="email">Alamat Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Masukkan alamat email anda">
+                </fieldset>
+                
+                <!-- Select (Jenis Layanan) -->
+                <fieldset>
+                    <label for="layanan">Jenis Layanan</label>
+                    <select id="layanan" name="layanan">
+                        <option value="">-- Pilih Layanan --</option>
+                        <option value="landing_page">Pembuatan Landing Page</option>
+                        <option value="web_profil">Website Profil Perusahaan</option>
+                        <option value="web_portofolio">Website Portofolio Pribadi</option>
+                        <option value="konsultasi">Konsultasi RWD</option>
+                    </select>
+                </fieldset>
+                
+                <!-- Textarea (Deskripsi Proyek) -->
+               <fieldset>
+                    <label for="deskripsi">Deskripsi Singkat Proyek</label>
+                    <textarea id="deskripsi" name="deskripsi" rows="5" placeholder="Jelaskan kebutuhan proyek Anda"></textarea>
+                    <style>
+                        label {
+                        display: block; 
+                        font-weight: bold;
+                        }
+                    
+                        textarea {
+                        width: 50%; 
+                        border-radius: 5px;
+                        }
+                    </style>
+                </fieldset>
+                
+                <!-- Radio Buttons (Budget) -->
+                <fieldset>
+                    <label>Budget Perkiraan</label>
+                    <label><input type="radio" name="budget" value="<5jt" > Rp 5 Juta</label>
+                    <label><input type="radio" name="budget" value="5-10jt"> Rp 5 - 10 Juta</label>
+                    <label><input type="radio" name="budget" value=">10jt"> Rp 10 Juta</label>
+                </fieldset>
+
+                <!-- Checkbox -->
+                <fieldset>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="setuju" value="true" required>
+                        Saya setuju dengan syarat dan ketentuan yang berlaku.
+                    </label>
+                </fieldset>
+                
+                <!-- Submit Button -->
+                <button type="submit" class="btn">Submit</button>
+                
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Alesandra Firstya Putri. Dibuat sebagai bagian dari tugas kuliah.</p>
+            <p>
+                <a href="https://itpln.ac.id" target="_blank" rel="noopener noreferrer">Institut Teknologi PLN (ITPLN)</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
